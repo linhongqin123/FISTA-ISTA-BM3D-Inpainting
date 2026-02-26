@@ -98,8 +98,8 @@ python main.py
 - FISTA 的收敛速度远快于 ISTA，尤其在 TV 情形下。
 - BM3D 在纹理丰富的图像（baboon、barbara、bridge、coastguard）上表现最佳，这得益于其非局部自相似性建模。
 
-详细讨论请参阅完整报告 `report/report.pdf`。
+详细讨论请参阅完整报告 `report/FISTA.pdf`。
 
 ## 报告
 
-报告 LaTeX 源码位于 `report/` 文件夹。您可以自行编译（需要 `biblatex` 和较新的 LaTeX 发行版），或直接阅读预编译的 `report.pdf`。
+报告 LaTeX 源码位于 `report/` 文件夹。您可以自行编译（需要 `biblatex` 和较新的 LaTeX 发行版），或直接阅读预编译的 `FISTA.pdf`。
