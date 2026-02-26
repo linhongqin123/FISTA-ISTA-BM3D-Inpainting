@@ -55,11 +55,10 @@
 \usepackage[sorting=none, style=ieee, backref=true]{biblatex}
 \addbibresource{references.bib}
 
-% 超链接 - 使用深蓝色，避免刺眼
 \usepackage[colorlinks=true,
-            linkcolor=blue!70!black,   % 内部链接（如目录、引用）颜色
-            citecolor=blue!70!black,    % 引用颜色
-            urlcolor=magenta]{hyperref} % URL 链接颜色（粉红色）
+            linkcolor=blue!70!black,
+            citecolor=blue!70!black,
+            urlcolor=blue!70!black]{hyperref}
 
 % 其他
 \usepackage{lipsum}
@@ -94,7 +93,9 @@
 \maketitle
 
 \begin{abstract}
-    Image inpainting is a fundamental task in image processing where missing pixels are reconstructed from observed data. This report presents a comprehensive study of the Fast Iterative Shrinkage-Thresholding Algorithm (FISTA) for image inpainting, comparing its performance with the standard ISTA and the state-of-the-art BM3D algorithm. We implement FISTA with two different regularizers: $\ell_1$-norm in the wavelet domain and Total Variation (TV) norm. Experiments are conducted on five images from the Set14 dataset with 50\% randomly missing pixels. Quantitative results measured by PSNR and SSIM demonstrate that TV-based methods outperform $\ell_1$-based approaches, with FISTA-TV achieving the highest PSNR of 25.66 dB on the test image `ppt3.png'. BM3D shows competitive performance on texture-rich images but falls slightly behind TV methods on smooth images. Convergence analysis confirms FISTA's superior convergence rate compared to ISTA, with FISTA requiring fewer iterations to reach the same objective value. Computational time analysis reveals that $\ell_1$ methods are fastest, followed by BM3D, while TV methods are most computationally expensive due to iterative proximal mapping. Our source codes are available: \textcolor{magenta}{\href{https://github.com/linhongqin123/FISTA-ISTA-BM3D-Inpainting.git}{https://github.com/linhongqin123/FISTA-ISTA-BM3D-Inpainting.git}}.
+    Image inpainting is a fundamental task in image processing where missing pixels are reconstructed from observed data. This report presents a comprehensive study of the Fast Iterative Shrinkage-Thresholding Algorithm (FISTA) for image inpainting, comparing its performance with the standard ISTA and the state-of-the-art BM3D algorithm. We implement FISTA with two different regularizers: $\ell_1$-norm in the wavelet domain and Total Variation (TV) norm. Experiments are conducted on five images from the Set14 dataset with 50\% randomly missing pixels. Quantitative results measured by PSNR and SSIM demonstrate that TV-based methods outperform $\ell_1$-based approaches, with FISTA-TV achieving the highest PSNR of 25.66 dB on the test image `ppt3.png'. BM3D shows competitive performance on texture-rich images but falls slightly behind TV methods on smooth images. Convergence analysis confirms FISTA's superior convergence rate compared to ISTA, with FISTA requiring fewer iterations to reach the same objective value. Computational time analysis reveals that $\ell_1$ methods are fastest, followed by BM3D, while TV methods are most computationally expensive due to iterative proximal mapping.Our source codes are available: 
+    {\hypersetup{urlcolor=magenta}%
+     \textit{\href{https://github.com/linhongqin123/FISTA-ISTA-BM3D-Inpainting.git}{https://github.com/linhongqin123/FISTA-ISTA-BM3D-Inpainting.git}}}.
 \end{abstract}
 
 %----------------------------------------------------------------------------------------
